@@ -1,0 +1,24 @@
+@import "breakpoints";
+
+$grid-count: 12;
+$grid-offset: 12;
+
+@for $i from 1 through $grid-count {
+	.col-#{$i} {
+        width: (100% / $grid-count * $i);
+    }
+}
+
+@include xs {
+    @for $i from 1 through $grid-count {
+        .col-sm-#{$i} {
+            width: (100% / $grid-count * $i);
+        }
+    }
+}
+
+@for $j from 1 through $grid-offset {
+    .col-offset-#{$j} {
+        margin-left: (100% / $grid-offset * $j);
+    }
+}
