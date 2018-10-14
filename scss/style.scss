@@ -27,7 +27,6 @@ body {
 
 .container {
     width: 100%;
-
     margin: 0 auto;
     @include xs {
         max-width: 480px;
@@ -66,7 +65,6 @@ body {
     z-index: 100;
     text-align: right;
 }
-
 
 .button {
     text-decoration: none;
@@ -457,9 +455,6 @@ body {
 }
 
 .tour__image {
-    // background-image: url("../img/apple_set.png");
-    // background-repeat: no-repeat;
-    // width: 800px;
     right: 0;
     top: -70px;
     position: absolute;
@@ -524,7 +519,6 @@ body {
     }
 }
 
-
 .footer__wrapper {
     display: flex;
     @include xs {
@@ -575,18 +569,17 @@ body {
 
 .copyright {
     color: $color-text-copyright;
-    margin-top: 1em;
+    margin-top: 15px;
     @include xs {
         color: $color-text;
         margin-top: 50px;
     }
     small {
         display: inline-block;
-        margin-top: 20px;
+        margin-top: 10px;
         @include xs {
             margin-top: 0;
             margin-left: 5%;
-            
         }
     }
 }
